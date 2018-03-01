@@ -1,1 +1,1 @@
-# Tips-Plus.github.io
+# TipsPlus

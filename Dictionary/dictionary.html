@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+* {
+	box-sizing: border-box;
+}
+#myInput {
+	background-image: url('/css/searchicon.png');
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	width: 98.6%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	margin-bottom: 12px;
+}
+#myUL {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#myUL li a {
+	border: 1px solid #ddd;
+	margin-top: -1px; /* Prevent double borders */
+	background-color: #f6f6f6;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	display: block
+}
+#myUL li a:hover:not(.header) {
+	background-color: #eee;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+</style>
+</head>
+
+<body>
+<input style="position: fixed" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Dictionary" title="Type in a term">
+	<br style="line-height: 325%">
+<ul id="myUL">
+	<li><a href="#">Afc2 – Increases functionality of “Apple File Conduit”, Apple’s USB file transfer.</a></li>
+	<li><a href="#">APT – Command line package manager used primarily on Linux systems, used by Cydia to keep track of installed packages.</a></li>
+	<li><a href="#">Blobs – Your “ticket” from Apple verifying a restore. You can use a handful of different tools to save these and back them up. Needed to downgrade your device.</a></li>
+	<li><a href="#">Cydia – A GUI tool that manages packages and repositories, automates the installation process of DEB files</a></li>
+	<li><a href="#">Daemon – A program that runs in the background of your device. They quietly handle a variety of tasks. System Daemons include: backboardd, wifid, launchd. Third party daemons include: f.lux, OpenSSH</a></li>
+	<li><a href="#">DEB – A file used to deliver tweak contents and their information to the filesystem</a></li>
+	<li><a href="#">Downgrade – Process of restoring to an unsigned iOS version</a></li>
+	<li><a href="#">DPKG – Command line package installer, unlike APT, it does not handle dependencies automatically</a></li>
+	<li><a href="#">Dropbear – SSH server on iOS</a></li>
+	<li><a href="#">Dylib – A “Dynamic Library”, all tweaks are compiled as this. There are the programs the Substrate (or alternatives) load to enable tweaks.</a></li>
+	<li><a href="#">Exploit – The process of taking advantage of a fault in the operating system and using it to gain elevated privileges.</a></li>
+	<li><a href="#">Filesystem – The structure and layout of files within your iOS device.</a></li>
+	<li><a href="#">Impactor – A tool developed by Saurik allowing access to XCode’s app signature feature across other operating systems.</a></li>
+	<li><a href="#">IPA – Filetype used to deliver jailed apps to device. These apps are sandboxed and have limited permissions.</a></li>
+	<li><a href="#">IPSW – iPhone Software, the compressed version of what is delivered to your device during a restore. Contains full filesystem, which can be decrypted on MacOS.</a></li>
+	<li><a href="#">Jailbreak – Gaining root access to an iOS device, typically includes installation of Cydia and Cydia Substrate</a></li>
+	<li><a href="#">KPP – “Kernel Patch Protection”, software that prevents code from editing the boot process, protects the kernel</a></li>
+	<li><a href="#">KTRR – Hardware-based KPP</a></li>
+	<li><a href="#">Nonce – This is a boot variable that forces your device to accept SHSH blobs.</a></li>
+	<li><a href="#">NoSubstrateMode – Jailbreak without substrate enabled. Root file access, and (most) tweaks are disabled.</a></li>
+	<li><a href="#">OpenSSH – SSH Server on iOS</a></li>
+	<li><a href="#">Repository – Servers hosting packages that Cydia can call to retrieve information about packages and install them.</a></li>
+	<li><a href="#">Respring – Ending springboard and letting it restart. Allows newly installed tweaks to be loaded without a reboot.</a></li>
+	<li><a href="#">Restore – reinstalling the Operating System, removing all user files</a></li>
+	<li><a href="#">Root – user with full access to the iOS filesystem and services</a></li>
+	<li><a href="#">Safe mode – A failsafe built into Cydia Substrate to guard users if springboard crashes</a></li>
+	<li><a href="#">Semi-tethered – A jailbreak that boots the phone normally, sometimes breaking some system apps. Requires re-jailbreaking from a computer after every boot.</a></li>
+	<li><a href="#">Semi-Untethered – A jailbreak that can be enabled from an app on your device. Typically requires resigning the application, unless it exploits a vulnerability in a stock iOS app.</a></li>
+	<li><a href="#">SEP – “Secure Enclave Processor”, manages TouchID and FaceID. FingerPrint/FaceRecognition data is stored in the encrypted processor. A compatible version of it’s operating system must be signed for a successful downgrade.</a></li>
+	<li><a href="#">SFTP – “SSH File Transfer Protocol”, compatible with both OpenSSH and DropBear, allows sharing files between iOS device and other devices via SSH</a></li>
+	<li><a href="#">SHSH Blobs - Your “ticket” from Apple verifying a restore. You can use a handful of different tools to save these and back them up. Needed to downgrade your device.</a></li>
+	<li><a href="#">SpringBoard – The base GUI of iOS. Most processes are built off this.</a></li>
+	<li><a href="#">SSH – Allows remote terminal usage. Control command line functions from other computers.</a></li>
+	<li><a href="#">Substrate – Allows code to hook into SpringBoard and other processes, the vast majority of tweaks rely on this or an alternative.</a></li>
+	<li><a href="#">Terminal – Allows command line</a></li>
+	<li><a href="#">Tethered – Jailbreak type that requires a connection to a computer to boot the device. The device will fail to boot up unless the tethered boot is run from a computer, and will boot into a jailbroken state.</a></li>
+	<li><a href="#">Theme – Used with the tweaks WinterBoard or Anemone, these are used to change the UI and other aspects of your device. They can be used to modify: icon images, status bar elements, UISounds, and much more.</a></li>
+	<li><a href="#">Theos – A tool used to develop tweaks for jailbroken iOS devices. Currently available on Windows, Linux, MacOS, and iOS.</a></li>
+	<li><a href="#">Tweak – code that hooks into running processes on your device and can be used to customize the look and feel of your device.</a></li>
+	<li><a href="#">Untethered – A jailbreak that is enabled at boot, requires a computer only to install the jailbreak, not to enable it.</a></li>
+</ul>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+</body>
+</html>
