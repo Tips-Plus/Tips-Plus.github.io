@@ -76,7 +76,6 @@ a{
 li{
 	font-family: SanFran;
 }
-}
 /*Standard Body CSS Ends*/
 
 /*special Body Info Starts*/
@@ -96,6 +95,17 @@ img .categories{
 	display: block;
 	margin-left: 50px;
 	margin-right: 50px;
+	font-size: 115%;
+}
+.column{
+    float: left;
+    width: 47%;
+    padding: 10px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .columnfirst {
 	display: inline-block;
