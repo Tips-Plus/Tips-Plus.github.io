@@ -35,9 +35,20 @@ p {
 <p>It allows you to go to one iOS version to another, regardless of wether or not Apple is signing that version. This can be used, for example, to go from iOS 10.2 to iOS 11.1.2, when 11.1.2 is no longer signed.</p>
 <h2>64-bit devices</h2>
 <h3>Requirements:</h3>
-<p style="font-style: italic; font-size: 95%;">64-bit devices are very protected in comparison to 32-bit devices. One major way is within the SEP. This handles some security processes on the device, most notably touchID. It runs it's own OS, which is also signed by Apple. sepOS must be compatible with iOS for a successful restore process.</p>
-<ul class="blank">
-	<li>SHSH</li>
+<p class="centertext" style="font-style: italic; font-size: 98%;">64-bit devices are very protected in comparison to 32-bit devices. One major way is within the SEP. This handles some security processes on the device, most notably touchID. It runs it's own OS, which is also signed by Apple. sepOS must be compatible with iOS for a successful restore process.</p>
+<ul style="all:unset;">
+	<li style="padding-left: 25%;">&bull; SHSH Blobs</li><br>
+	<li style="padding-left: 25%;">&bull; Signed SEP</li><br>
+	<li style="padding-left: 25%;">&bull; Device Capable of setting Nonce</li><br>
+	<li style="padding-left: 25%;">&bull; IPSW for target iOS version</li><br>
+	<li style="padding-left: 25%;">&bull; Machine running Mac OS or Windows</li><br>
 </ul>
-</body>
+<h2 style="font-size: 200%;">Let's get started:</h2>
+	<ol style="all:unset">
+	<li style="padding-left: 15%;">Download the latest FutureRestore from <a style="all:unset;" href="https://github.com/encounter/futurerestore/releases">Encounter's GitHub</a></li><br>
+	<li style="padding-left: 15%;">Put the <span style="font-style: italic">.IPSW</span>  and <span style="font-style: italic">.SHSH</span> in the same folder as the FutureRestore executable</li><br>
+	<li style="padding-left: 15%;">Set your Nonce (Use NonceSet by JulioVerne)</li><br>
+	<li style="padding-left: 15%;">test</li>
+</ol>
+	</body>
 </html>

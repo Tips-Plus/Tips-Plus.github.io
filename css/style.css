@@ -76,6 +76,11 @@ a{
 li{
 	font-family: SanFran;
 }
+ol{
+	list-style-type: decimal;
+	padding-left: 15%;
+	padding-right: 15%;
+}
 /*Standard Body CSS Ends*/
 
 /*special Body Info Starts*/
@@ -132,9 +137,9 @@ img .categories{
 	text-decoration: auto !important;
 	list-style-type: circle !important;
 	margin: auto !important;
-	padding: auto !important;
 	overflow: auto !important;
 	position: relative !important;
 	top: auto !important;
 	float: none !important;
 	width: 50% !important;
+	z-index: -1;}
