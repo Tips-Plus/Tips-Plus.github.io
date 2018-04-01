@@ -105,6 +105,12 @@ li.list{
 	margin-right: 50px;
 	font-size: 115%;
 }
+.makegood{
+	color: #553E4E;
+	font-family: SanFran;
+	font-size: 120%;
+	line-height: 200%;
+}
 .column{
     float: left;
     width: 47%;
