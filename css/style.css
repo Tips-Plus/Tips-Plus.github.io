@@ -7,7 +7,7 @@
 */
 
 /*navigation bar CSS Starts*/
-ul {
+NAV ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -17,20 +17,20 @@ ul {
 	top: 0;
 	width: 100%;
 }
-li {
+NAV li {
 	float: left;
 }
-li a {
+NAV li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
-li a:hover:not(.statushome) {
+NAV li a:hover:not(.statushome) {
 	background-color: #8E5572;
 }
-.statushome {
+NAV .statushome {
 	background-color: #553E4E;
 }
 /*Navigation Bar CSS Ends*/
@@ -66,7 +66,7 @@ h3{
 p {
 	color: #553E4E;
 	font-family: SanFran;
-	font-size: 110%;
+	font-size: 130%;
 	margin-left: 15%;
 	margin-right: 15%;
 }
@@ -89,8 +89,11 @@ ol{
 	column-fill: auto;
 	column-rule: 4px double #8E5572;
 }
-img .categories{
-	
+ul.list{
+	all:unset;
+}
+li.list{
+	padding-left: 15%;
 }
 .categories{
 	column-count: 4;
