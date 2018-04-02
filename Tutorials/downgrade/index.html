@@ -37,12 +37,12 @@ p {
 <p>It allows you to go to one iOS version to another, regardless of wether or not Apple is signing that version. This can be used, for example, to go from iOS 10.2 to iOS 11.1.2, when 11.1.2 is no longer signed.</p>
 <h2>64-bit devices</h2>
 <h3>Requirements:</h3>
-<p class="centertext" style="font-style: italic; font-size: 98%;">64-bit devices are very protected in comparison to 32-bit devices. One major way is within the SEP. This handles some security processes on the device, most notably touchID. It runs it's own OS, which is also signed by Apple. sepOS must be compatible with iOS for a successful restore process.</p>
+<p class="centertext" style="font-style: italic; font-size: 98%;">64-bit devices are very protected in comparison to 32-bit devices. The most major way is within the SEP. This handles some security processes on the device, most notably touchID. It runs its own OS, which is also signed by Apple. sepOS must be compatible with iOS for a successful restore process.</p>
 <div class="makegood">
 	<ul style="padding-left: 30%;">
 		<li> SHSH Blobs</li>
 		<li> Signed SEP</li>
-		<li> Device Capable of setting Nonce</li>
+		<li> Device Capable of setting nonce (This can be done with NonceSet or V0rtexNonce)</li>
 		<li> IPSW for target iOS version</li>
 		<li> Machine running Mac OS or Windows</li>
 	</ul>
@@ -52,7 +52,7 @@ p {
 	<ol style="padding-left: 30%;">
 		<li>Download the latest FutureRestore from <a style="all:unset;" href="https://github.com/encounter/futurerestore/releases">Encounter's GitHub</a></li>
 		<li>Put the <span style="font-style: italic">.IPSW</span> and <span style="font-style: italic">.SHSH</span> in the same folder as the FutureRestore executable</li>
-		<li>Set your Nonce (Use NonceSet by JulioVerne)</li>
+		<li>Set your Nonce (currently, a nonce can only be set for iOS 11.1.2 and lower)</li>
 		<li>placeholder</li>
 	</ol>
 </div>
