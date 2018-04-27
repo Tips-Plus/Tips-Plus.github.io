@@ -27,12 +27,17 @@ NAV li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
+
 NAV li a:hover:not(.statushome) {
 	background-color: #8E5572;
 }
-NAV .statushome {
+.statushome{
+	line-height: 0;
 	background-color: #553E4E;
+	padding: 9px 9px !important;
+	margin: 0 !important;
 }
+
 /*Navigation Bar CSS Ends*/
 
 /*Standard Body CSS Starts*/
@@ -46,6 +51,7 @@ body {
 	background-color: #DBD2E0;
 }
 h1 {
+	padding-top: 30px;
 	color: #553E4E;
 	font-size: 300%;
 	text-align: center;
@@ -152,3 +158,8 @@ li.list{
 	float: none !important;
 	width: 50% !important;
 	z-index: -1;}
+
+.content {
+	width: 80% !important;
+	margin: auto;
+}

@@ -10,14 +10,14 @@ function getDocHeight(doc) {
     doc = doc || document;
     // stackoverflow.com/questions/1145850/
     var body = doc.body, html = doc.documentElement;
-    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+    var height = Math.max( body.scrollHeight, body.offsetHeight,
         html.clientHeight, html.scrollHeight, html.offsetHeight );
     return height;
 }
 
 function setIframeHeight(id) {
     var ifrm = document.getElementById(id);
-    var doc = ifrm.contentDocument? ifrm.contentDocument: 
+    var doc = ifrm.contentDocument? ifrm.contentDocument:
         ifrm.contentWindow.document;
     ifrm.style.visibility = 'hidden';
     ifrm.style.height = "10px"; // reset to minimal height ...
@@ -34,11 +34,11 @@ document.getElementById('ifrm').onload = function() { // Adjust the Id according
 <body>
 <nav>
 	<ul>
-		<li><a class="statushome" href="..">Home</a></li>
-		<li><a href="../Basics/">The Basics</a></li>
-		<li><a href="../Tutorials/">Tutorials</a></li>
+    <li><a class="statushome" href="../index.html"><img src="../images/Tips-icon.png" style="height:30px"></a></li>
+		<li><a href="../Basics/index.html">The Basics</a></li>
+		<li><a href="../Tutorials/index.html">Tutorials</a></li>
 		<li><a href="#">Dictionary</a></li>
-		<li><a href="../contributors">Community Members</a></li>
+		<li><a href="../contributors/index.html">Community Members</a></li>
 		<li style="padding-top: 10px;position: absolute; right: 10px;">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick">
@@ -50,10 +50,12 @@ document.getElementById('ifrm').onload = function() { // Adjust the Id according
 		</li>
 	</ul>
 </nav>
+<div class="content">
 <br style="line-height: 300%">
 <h1>Dictionary</h1>
 <p class="centertext">More items will be constantly added to the list</p>
 <iframe class="centerimage" src="./dictionary.html" height="400px" width="90%" frameborder="3" id="ifrm"></iframe>
 <p class="centertext">Something Missing that you feel should be included? <a href="http://mpg13.github.io">Contact me</a></p>
+</div>
 </body>
 </html>
