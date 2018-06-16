@@ -64,6 +64,7 @@ h2{
 	font-size: 250%;
 	text-align: center;
 	font-family: 'Arimo', sans-serif;
+	display: block;
 }
 h3{
 	margin: 15px;
@@ -175,6 +176,22 @@ li.list{
 .column{
     float: left;
     width: 50%;
+		line-height: 1.4em;
+}
+
+.thirdcolumn {
+	float: left;
+	width: 33%;
+	line-height: 1.4em;
+}
+
+.column p {
+	margin-bottom: 12px;
+	font-size: 17px;
+}
+
+.column a {
+	padding:0;
 }
 .row:after {
     content: "";
@@ -242,4 +259,26 @@ li.list{
 
 .bold {
 	font-weight: bold;
+}
+
+.collapsible {
+color: black;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+
+.collapsible-content {
+	padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+
+.forceleft {
+	margin-left: 0px !important;
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Basics</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logo.ico">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("../nav.html");
+      });
+    </script>
+    <div class="content">
+      <h1><a name="jailbreak">Jailbreak</a></h1>
+    <!--<button class="collapsible">Jailbreak iOS 9.1-11.1.2</button>-->
+    <!-- uncomment this and delete the next <div> tag <div class="collapsible-content">--> <div>
+         <h3>This applies to:</h3>
+         <ul>
+            <li>
+      <a href="https://coolstar.org/electra/">Electra</a>: 11.0-11.1.2, 64-bit</li>
+      <li><a href="http://newosxbook.com/liberios/">LiberiOS</a>: 11.0-11.1.2, 64-bit [DEVELOPERS ONLY]</li>
+      <li><a href="https://meridian.sparkes.zone/">Meridian</a>: 10.x, 64-bit [DEVELOPERS ONLY]</li>
+      <li><a href="https://h3lix.tihmstar.net/">H3lix</a>: 10.x, 32-bit</li>
+      <li><a href="https://g0blin.sticktron.net/">G0blin</a>: 10.3.x, 64-bit</li>
+      <li><a href="https://yalu.qwertyoruiop.com/">Yalu102</a>: 10-10.2, 64-bit (Excluding iP7)</li>
+      <li><a href="https://yalu.qwertyoruiop.com/">Extra_recipe+YaluX</a>: 10-10.1.1, 64-bit (Exclusively iP7)</li>
+      <li><a href="https://iabem97.github.io/saigon_website/">Saïgon</a>: 10.2.1, 64-bit</li>
+      <li><a href="https://phoenixpwn.com/">Phœnix</a>: 9.3.5, 32-bit</li>
+      <li><a href="https://en.9.pangu.io/">PanGu9</a>: 9.2-9.3.3, 64-bit</li>
+      <li><a href="http://wall.supplies/">HomeDepot</a>: 9.1-9.3.4, 32-bit</li>
+      </ul>
+      <p>All jailbreaks on this page are Semi-Untethered. This means that after a reboot, your device will not be jailbroken. You must re-enter a jailbroken state from the app used to jailbreak. The app will expire seven days after installation. You must repeat the steps 1-4 to re-sign the app.</p>
+      <h3>Requirements:</h3>
+      <div class="makegood">
+         <ul>
+            <li><a href="http://www.cydiaimpactor.com/">Cydia Impactor</a></li>
+            <li>.ipa for the desired Jailbreak (linked above)</li>
+            <li>Computer running Linux, MacOS, or Windows</li>
+         </ul>
+      </div>
+      <h3>Instructions</h3>
+      <div class="makegood">
+         <ol>
+            <li> Connect you iOS device to your computer. Make sure to trust your computer.</li>
+            <li> Launch Cydia Impactor, open a file explorer (Nautilus, Finder, Windows Explorer) to the directory where the Jailbreak .ipa is saved.</li>
+            <li> In Cydia Impactor, click the XCODE drop-down menu, and select "Revoke Certificates". Enter your Apple ID credentials when prompted.</li>
+            <img src="https://tips-plus.github.io/images/tutorials/revokecerts.png">
+            <li> Drag and drop the jailbreak .ipa into the Cydia Impactor windows. Enter your Apple ID credentials when prompted.</li>
+            <img style="width=100%;" src="https://tips-plus.github.io/images/tutorials/dragdrop.png">
+            <li> On your iOS device, navigate to "Settings&gt;General&gt;Profiles". Click on your email, and trust the certificate as prompted.</li>
+            <li> Launch the app, and follow the on-screen instructions. Generally, this only includes pressing the "Jailbreak" button.</li>
+         </ol>
+      </div>
+      <h3>
+      Congratulations! You've now jailbroken your device!</br>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+  </body>
+</html>
