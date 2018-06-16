@@ -33,7 +33,7 @@ NAV li a {
 	padding-top: 10px; float:right; padding-right: 10px;
 }
 
-NAV li a:hover:not(.statushome) {
+NAV li a:hover {
 	text-decoration: underline;
 }
 .statushome{
@@ -111,10 +111,9 @@ li.list{
 
 .category {
 	border-radius: 15px;
-	padding: 10px;
 	margin-bottom: 15px;
 	width: 95%;
-	height: 180px;
+	height: 200px;
 }
 
 .basics {
@@ -137,14 +136,15 @@ li.list{
 .category img {
 	height: 100px;
 	padding: 15px;
-	float:right;
+	float: right;
 	opacity: 0.8;
 }
 
 .category h3 {
 	position: relative;
 	color: white;
-	margin-bottom: 10px;
+	padding: 15px;
+	margin: 0px;
 }
 
 .category p {
@@ -174,8 +174,7 @@ li.list{
 }
 .column{
     float: left;
-    width: 47%;
-    padding: 10px;
+    width: 50%;
 }
 .row:after {
     content: "";
@@ -221,7 +220,6 @@ li.list{
 }
 
 .pagetitle {
-	width: 30%;
 	margin: auto;
 	font-size: 72px;
 	font-weight:bold;
