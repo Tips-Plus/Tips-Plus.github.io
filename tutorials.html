@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Basics</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+<link rel="shortcut icon" href="../images/logo.ico">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+		$("#nav-placeholder").load("nav.html");
+	});
+	</script>
+<br style="line-height: 300%">
+<div class="content">
+
+<h1>Tutorials</h1>
+<a href="jailbreak/">
+	<h2>Jailbreak</h2>
+	<h3 class="centertext">This applies to:</h3>
+	<h2 style="font-size: 175%;"><span style="font-size: 75%;"> <a href="https://coolstar.org/electra/">Electra</a>: 11.0-11.1.2, 64-bit<br>
+		<hr>
+		<a href="http://newosxbook.com/liberios/">LiberiOS</a>: 11.0-11.1.2, 64-bit [DEVELOPERS ONLY]<br>
+		<hr>
+		<a href="https://meridian.sparkes.zone/">Meridian</a>: 10.x, 64-bit [DEVELOPERS ONLY]<br>
+		<hr>
+		<a href="https://h3lix.tihmstar.net/">H3lix</a>: 10.x, 32-bit<br>
+		<hr>
+		<a href="https://g0blin.sticktron.net/">G0blin</a>: 10.3.x, 64-bit<br>
+		<hr>
+		<a href="https://yalu.qwertyoruiop.com/">Yalu102</a>: 10-10.2, 64-bit (Excluding iP7)<br>
+		<hr>
+		<a href="https://yalu.qwertyoruiop.com/">Extra_recipe+YaluX</a>: 10-10.1.1, 64-bit (Exclusively iP7)<br>
+		<hr>
+		<a href="https://iabem97.github.io/saigon_website/">Saïgon</a>: 10.2.1, 64-bit<br>
+		<hr>
+		<a href="https://phoenixpwn.com/">Phœnix</a>: 9.3.5, 32-bit<br>
+		<hr>
+		<a href="https://en.9.pangu.io/">PanGu9</a>: 9.2-9.3.3, 64-bit<br>
+		<hr>
+		<a href="http://wall.supplies/">HomeDepot</a>: 9.1-9.3.4, 32-bit<br>
+		<hr>
+		</span></h2>
+	<p>All jailbreaks on this page are Semi-Untethered. This means that after a reboot, your device will not be jailbroken. You must re-enter a jailbroken state from the app used to jailbreak. The app will expire seven days after installation. You must repeat the steps 1-4 to re-sign the app.</p>
+	<p style="font-weight: bold; font-size:150%;">Requirements:</p>
+	<div class="makegood">
+		<ul style="padding-left: 15%">
+			<li><a href="http://www.cydiaimpactor.com/">Cydia Impactor</a></li>
+			<li>.ipa for the desired Jailbreak (linked above)</li>
+			<li>Computer running Linux, MacOS, or Windows</li>
+		</ul>
+	</div>
+	<p style="font-weight: bold; font-size:150%;">Instructions:</p>
+	<div class="makegood">
+		<ol>
+			<li> Connect you iOS device to your computer. Make sure to trust your computer.</li>
+			<li> Launch Cydia Impactor, open a file explorer (Nautilus, Finder, Windows Explorer) to the directory where the Jailbreak .ipa is saved.</li>
+			<li> In Cydia Impactor, click the XCODE drop-down menu, and select "Revoke Certificates". Enter your Apple ID credentials when prompted.</li>
+			<img src="images/tutorials/revokecerts.png">
+			<li> Drag and drop the jailbreak .ipa into the Cydia Impactor windows. Enter your Apple ID credentials when prompted.</li>
+			<img style="width=100%;" src="images/tutorials/dragdrop.png">
+			<li> On your iOS device, navigate to "Settings&gt;General&gt;Profiles". Click on your email, and trust the certificate as prompted.</li>
+			<li> Launch the app, and follow the on-screen instructions. Generally, this only includes pressing the "Jailbreak" button.</li>
+		</ol>
+	</div>
+	<h3>Congratulations! You've now jailbroken your device!</br>
+	<h2>Downgrade</h2>
+	<h1>Downgrading iOS devices</h1>
+	<h3>Downgrading is a key part of Jailbreaking.</h3>
+	<p>It allows you to go to one iOS version to another, regardless of wether or not Apple is signing that version. This can be used, for example, to go from iOS 10.2 to iOS 11.1.2, when 11.1.2 is no longer signed.</p>
+	<h2>64-bit devices</h2>
+	<h3>Requirements:</h3>
+	<p class="centertext" style="font-style: italic; font-size: 98%;">64-bit devices are very protected in comparison to 32-bit devices. The most major way is within the SEP. This handles some security processes on the device, most notably touchID. It runs its own OS, which is also signed by Apple. sepOS must be compatible with iOS for a successful restore process.</p>
+	<div class="makegood">
+		<ul style="padding-left: 30%;">
+			<li> SHSH Blobs</li>
+			<li> Signed SEP</li>
+			<li> Device Capable of setting nonce (This can be done with NonceSet or V0rtexNonce)</li>
+			<li> IPSW for target iOS version</li>
+			<li> Machine running Mac OS or Windows</li>
+		</ul>
+	</div>
+	<h2 style="font-size: 200%;">Let's get started:</h2>
+	<div class="makegood">
+		<ol style="padding-left: 30%;">
+			<li>Download the latest FutureRestore from <a style="all:unset;" href="https://github.com/encounter/futurerestore/releases">Encounter's GitHub</a></li>
+			<li>Put the <span style="font-style: italic">.IPSW</span> and <span style="font-style: italic">.SHSH</span> in the same folder as the FutureRestore executable</li>
+			<li>Set your Nonce (currently, a nonce can only be set for iOS 11.1.2 and lower)</li>
+			<li>placeholder</li>
+		</ol>
+	</div>
+	<h2>Unjailbreak</h2>
+	<h2>Protecting your Jailbreak</h2>
+	<h2>Fixing Cydia Errors</h2>
+	<h2>SSH</h2>
+	<h2>Managing Packages</h2>
+	<h2>Locating System Files</h2>
+	</div>
+<br>
+</div>
+</body>
+</html>
