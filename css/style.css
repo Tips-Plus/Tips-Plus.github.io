@@ -75,8 +75,7 @@ p {
 	color: #333;
 	font-family: 'Arimo', sans-serif;
 	font-size: 130%;
-	margin-left: 15%;
-	margin-right: 15%;
+
 }
 a{
 	text-decoration: none;
@@ -86,8 +85,6 @@ li{
 }
 ol{
 	list-style-type: decimal;
-	padding-left: 15%;
-	padding-right: 15%;
 }
 /*Standard Body CSS Ends*/
 
@@ -219,7 +216,7 @@ li.list{
 	z-index: -1;}
 
 .content {
-	width: 80% !important;
+	width: 60% !important;
 	margin: auto;
 }
 
@@ -239,4 +236,12 @@ li.list{
 	font-size: 32px;
 	font-weight:lighter;
 	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
 }
