@@ -8,7 +8,7 @@
 
 /*navigation bar CSS Starts*/
 NAV {
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #DDD;
 }
 NAV ul {
 	list-style-type: none;
@@ -115,6 +115,7 @@ li.list{
 	margin-bottom: 15px;
 	width: 95%;
 	height: 200px;
+	position: relative;
 }
 
 .basics {
@@ -136,9 +137,11 @@ li.list{
 
 .category img {
 	height: 100px;
-	padding: 15px;
 	float: right;
 	opacity: 0.8;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
 }
 
 .category h3 {
@@ -150,7 +153,7 @@ li.list{
 
 .category p {
 	font-weight: bold;
-	font-size: 65%;
+	font-size: 13px !important;
 	text-transform:uppercase;
 	color: white;
 	opacity: 0.7;
