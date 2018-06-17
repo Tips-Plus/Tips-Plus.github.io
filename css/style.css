@@ -7,79 +7,84 @@
 */
 
 /*navigation bar CSS Starts*/
+NAV {
+	border-bottom: 1px solid grey;
+}
 NAV ul {
 	list-style-type: none;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	overflow: hidden;
-	background-color: #9B97B2;
-	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 80%;
 }
 NAV li {
 	float: left;
 }
 NAV li a {
 	display: block;
-	color: white;
+	color: #333;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
-NAV li a:hover:not(.statushome) {
-	background-color: #8E5572;
+
+.paypal {
+	padding-top: 10px; float:right; padding-right: 10px;
 }
-NAV .statushome {
-	background-color: #553E4E;
+
+NAV li a:hover {
+	text-decoration: underline;
 }
+.statushome{
+	line-height: 0;
+	padding: 9px 9px !important;
+	margin: 0 !important;
+}
+
 /*Navigation Bar CSS Ends*/
 
 /*Standard Body CSS Starts*/
 @font-face{
-	font-family: SanFran;
+	font-family: 'Arimo', sans-serif;
 	src: url(../fonts/iOSSF.ttf);
 }
 body {
 	margin: 0;
-	font-family: SanFran;
-	background-color: #DBD2E0;
+	font-family: 'Arimo', sans-serif;
 }
 h1 {
+	padding-top: 30px;
 	color: #553E4E;
 	font-size: 300%;
-	text-align: center;
-	font-family: SanFran;
+	font-family: 'Arimo', sans-serif;
 }
 h2{
 	color: #8E5572;
 	font-size: 250%;
 	text-align: center;
-	font-family: SanFran;
+	font-family: 'Arimo', sans-serif;
 }
 h3{
-	color: #9B97B2;
+	margin: 15px;
+	color: #333;
 	font-size: 130%;
-	text-align: center;
-	font-family: SanFran;
+	font-family: 'Arimo', sans-serif;
 }
 p {
-	color: #553E4E;
-	font-family: SanFran;
+	color: #333;
+	font-family: 'Arimo', sans-serif;
 	font-size: 130%;
-	margin-left: 15%;
-	margin-right: 15%;
+
 }
 a{
 	text-decoration: none;
 }
 li{
-	font-family: SanFran;
+	font-family: 'Arimo', sans-serif;
 }
 ol{
 	list-style-type: decimal;
-	padding-left: 15%;
-	padding-right: 15%;
 }
 /*Standard Body CSS Ends*/
 
@@ -92,13 +97,69 @@ ol{
 ul.list{
 	all:unset;
 }
+
 li.list{
 	padding-left: 15%;
 }
-.categories{
-	column-count: 4;
-	column-rule: 4px solid #8E5572;
+
+.categories {
+	width: 80%;
+	margin: auto;
+	column-count: 2;
+	column-width: 50%;
 }
+
+.category {
+	border-radius: 15px;
+	margin-bottom: 15px;
+	width: 95%;
+	height: 200px;
+}
+
+.basics {
+  background: linear-gradient(to top right, red, yellow);
+}
+
+.tutorials {
+	background: linear-gradient(to top right,#00B7FF, #FFFFC7);
+}
+
+.dictionary {
+
+	background: linear-gradient(to top right,#B066FE, #63E2FF);
+}
+
+.contributors {
+	background: linear-gradient(to top right,#4F00BC, #29ABE2)
+}
+
+.category img {
+	height: 100px;
+	padding: 15px;
+	float: right;
+	opacity: 0.8;
+}
+
+.category h3 {
+	position: relative;
+	color: white;
+	padding: 15px;
+	margin: 0px;
+}
+
+.category p {
+	font-weight: bold;
+	font-size: 65%;
+	text-transform:uppercase;
+	color: white;
+	opacity: 0.7;
+	padding: 0;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 15px;
+	display: inline-block;
+}
+
 .introtext {
 	display: block;
 	margin-left: 50px;
@@ -107,14 +168,13 @@ li.list{
 }
 .makegood{
 	color: #553E4E;
-	font-family: SanFran;
+	font-family: 'Arimo', sans-serif;
 	font-size: 120%;
 	line-height: 200%;
 }
 .column{
     float: left;
-    width: 47%;
-    padding: 10px;
+    width: 50%;
 }
 .row:after {
     content: "";
@@ -137,6 +197,7 @@ li.list{
 }
 .blank{
 	/*hopefully clear all formatting*/
+	/*when everyone's important, no one is*/
 	height:auto !important;
 	background-color: rgba(0,0,0,0.00) !important;
 	display: auto !important;
@@ -152,3 +213,33 @@ li.list{
 	float: none !important;
 	width: 50% !important;
 	z-index: -1;}
+
+.content {
+	width: 60% !important;
+	margin: auto;
+}
+
+.pagetitle {
+	margin: auto;
+	font-size: 72px;
+	font-weight:bold;
+}
+
+.pagetitle img {
+	vertical-align:middle;
+	height:128px; padding-right: 8px
+}
+
+.pagesubtitle {
+	font-size: 32px;
+	font-weight:lighter;
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
