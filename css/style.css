@@ -20,6 +20,7 @@ NAV ul {
 }
 NAV li {
 	float: left;
+	line-height: 100%
 }
 NAV li a {
 	display: block;
@@ -27,6 +28,7 @@ NAV li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	
 }
 
 .paypal {
@@ -34,14 +36,13 @@ NAV li a {
 }
 
 NAV li a:hover {
-	text-decoration: underline;
+	background: linear-gradient(to bottom,#eee, #fff);
 }
 .statushome{
 	line-height: 0;
 	padding: 9px 9px !important;
 	margin: 0 !important;
 }
-
 /*Navigation Bar CSS Ends*/
 
 /*Standard Body CSS Starts*/
@@ -74,7 +75,7 @@ h3{
 p {
 	color: #333;
 	font-family: 'Arimo', sans-serif;
-	font-size: 130%;
+	font-size: 110%;
 
 }
 a{
@@ -82,6 +83,13 @@ a{
 }
 li{
 	font-family: 'Arimo', sans-serif;
+	line-height: 150%;
+	color: #444;
+}
+li a{
+	color:#8E5572;
+	text-decoration: none;
+	font-size: 120%;
 }
 ol{
 	list-style-type: decimal;
@@ -102,12 +110,6 @@ li.list{
 	padding-left: 15%;
 }
 
-.categories {
-	width: 80%;
-	margin: auto;
-	column-count: 2;
-	column-width: 50%;
-}
 
 .category {
 	border-radius: 15px;
@@ -130,7 +132,7 @@ li.list{
 }
 
 .contributors {
-	background: linear-gradient(to top right,#4F00BC, #29ABE2)
+	background: linear-gradient(to top right,#4F00BC, #29ABE2);
 }
 
 .category img {
@@ -159,19 +161,20 @@ li.list{
 	margin-left: 15px;
 	display: inline-block;
 }
-
+.singlesection{
+	border: 1px solid grey;
+	border-radius: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: linear-gradient(to bottom,#fff, #eee);
+}
 .introtext {
 	display: block;
 	margin-left: 50px;
 	margin-right: 50px;
 	font-size: 115%;
 }
-.makegood{
-	color: #553E4E;
-	font-family: 'Arimo', sans-serif;
-	font-size: 120%;
-	line-height: 200%;
-}
+
 .column{
     float: left;
     width: 50%;
@@ -195,24 +198,6 @@ li.list{
 .centertext{
 	text-align: center;
 }
-.blank{
-	/*hopefully clear all formatting*/
-	/*when everyone's important, no one is*/
-	height:auto !important;
-	background-color: rgba(0,0,0,0.00) !important;
-	display: auto !important;
-	color: auto !important;
-	text-align: auto !important;
-	padding: auto !important;
-	text-decoration: auto !important;
-	list-style-type: circle !important;
-	margin: auto !important;
-	overflow: auto !important;
-	position: relative !important;
-	top: auto !important;
-	float: none !important;
-	width: 50% !important;
-	z-index: -1;}
 
 .content {
 	width: 60% !important;
