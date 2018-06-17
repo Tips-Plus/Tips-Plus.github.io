@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Tips+</title>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
 	<link href="./images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
 	<link href="./images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
@@ -20,21 +20,24 @@
 
 	<div class="content">
 		<br style="line-height: 350%">
-		<div class="centertext pagetitle"><img src="./images/Tips-icon.png"> Tips+</div>
+		<div class="center pagetitle"><img src="./images/Tips-icon.png"> Tips+</div>
 		<p class="pagesubtitle">The layman's guide to all things jailbreak</p>
-		<p>Apple provides standard users with an app designed to help get used to using an iOS device. Tips+ provides advanced users with the kind of guide that an advanced user would need.<br>
-		With a complete list of definitions, a tutorial for everything you could need, and an outreach to a large community, Tips+ should provide you with most of what you might need.</p>
-		<div class="column">
-			<a href="basics.html"><div class="category basics"><h3>Basics ›</h3><p>Information about jailbreaking</p><img src="images/target.svg"></img></div></a>
-			<a href="tutorials.html"><div class="category tutorials"><h3>Tutorials ›</h3><p>Useful guides for everyone</p><img src="images/shopping-list.svg"></img></div></a>
+		<p>Apple provides the Tips app to get standard users acquainted to using an iOS device. Tips+ provides standard users with the kind of information advanced users would need.</p>
+		<p>With a list of useful definitions, basic information about jailbreaking, useful guides, and connections to a large community, we have everything you need!</p>
+		<div class="six wide column">
+			<div class="basics category"><a href="basics.html"><h3>Basics ›</h3><p>Information about jailbreaking</p><img src="images/target.svg"></img></a></div>
+			<div class="tutorials category"><a href="tutorials.html"><h3>Tutorials ›</h3><p>Useful guides for everyone</p><img src="images/shopping-list.svg"></img></a></div>
 		</div>
-		<div class="column">
-			<a href="dictionary.html"><div class="category dictionary"><h3>Dictionary ›</h3><p>Jailbreaking terminology</p><img src="images/invoice.svg"></img></div></a>
-			<a href="contributors.html"><div class="category contributors"><h3>Who's who ›</h3><p>Important contributors to jailbreaking</p><img src="images/teamwork.svg"></img></div></a>
-		</div>
-			<div style="display: inline; opacity: 0.3; text-align: right;">
-			Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a>
+		<div class="six wide column">
+			<div class="dictionary category"><a href="dictionary.html"><h3>Dictionary ›</h3><p>Jailbreaking terminology</p><img src="images/invoice.svg"></img></a></div>
+			<div class="contributors category"><a href="contributors.html"><h3>Who's who ›</h3><p>Important contributors to jailbreaking</p><img src="images/teamwork.svg"></img></a></div>
 		</div>
 	</div>
+	<div id="footer-placeholder"></div>
+	<script>
+	$(function(){
+		$("#footer-placeholder").load("footer.html");
+	});
+	</script>
 </body>
 </html>

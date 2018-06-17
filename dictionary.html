@@ -5,7 +5,7 @@
 <title>Tips+ Dictionary</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -45,9 +45,15 @@ document.getElementById('ifrm').onload = function() { // Adjust the Id according
 <div class="content">
 <br style="line-height: 300%">
 <h1>Dictionary</h1>
-<p class="centertext">More items will be constantly added to the list</p>
-<iframe class="centerimage" src="Dictionary/dictionary.html" height="400px" width="90%" frameborder="3" id="ifrm"></iframe>
-<p class="centertext">Something Missing that you feel should be included? <a href="http://mpg13.github.io">Contact me</a></p>
+<p class="center">More items will be constantly added to the list</p>
+<iframe class="center" src="Dictionary/dictionary.html" height="400px" width="90%" frameborder="3" id="ifrm"></iframe>
+<p class="center">Something Missing that you feel should be included? <a href="http://mpg13.github.io">Contact me</a></p>
 </div>
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("footer.html");
+});
+</script>
 </body>
 </html>
