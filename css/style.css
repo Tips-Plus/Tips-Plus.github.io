@@ -1,7 +1,7 @@
 
 /*navigation bar CSS Starts*/
 #nav-placeholder {
-	height: 48px;
+	z-index: 1;
 	position: sticky;
 	top: 0;
 }
@@ -13,41 +13,33 @@ nav ul {
 	list-style-type: none;
 	margin: auto;
 	padding: 0;
-	width: 80%;
+	width: 70%;
 }
 nav li {
-	font-size: 100%;
+	font-size: 16px;
 	float: left;
-	line-height: 100%
 }
-nav li a {
+nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
 	padding: 9px 16px;
 	text-decoration: none;
 	line-height: 30px;
-	transition: color 250ms;
+	transition: opacity 250ms;
 }
-nav li a:hover {
-	color: #ccc;
+nav a:hover {
+	opacity: 0.8;
 }
-.statushome {
-	line-height: 30px;
-	margin: 0 !important;
-}
-.statushome img {
+nav li img {
+	height: 30px;
 	vertical-align:top;
-	height:30px;
 }
-
 /*Navigation Bar CSS Ends*/
 
 /*Standard Body CSS Starts*/
-@font-face{
-	font-family: 'Tajawal', sans-serif;
-}
 body {
+	color: #333;
 	margin: 0px;
 	font-family: 'Tajawal', sans-serif;
 	text-rendering: optimizeLegibility;
@@ -55,42 +47,27 @@ body {
 -moz-osx-font-smoothing: grayscale;
 }
 h1 {
-	color: #553E4E;
-	font-size: 300%;
+	font-size: 48px;
 }
 h2{
-	color: #8E5572;
-	font-size: 250%;
+	font-size: 40px;
 	text-align: center;
 	display: block;
 }
 h3{
-	color: #333;
-	font-size: 130%;
-}
-p {
-	color: #333;
-
-	font-size: 130%;
-
+	font-size: 20px;
 }
 a {
 	text-decoration: none;
 }
-
 ol{
 	list-style-type: decimal;
-}
-
-li {
-	font-size: 130%;
 }
 code{
 	background: lightgrey;
 }
-/*Standard Body CSS Ends*/
 
-/*special Body Info Starts*/
+/*Classes for special body elements*/
 
 .category {
 	border-radius: 15px;
@@ -101,30 +78,23 @@ code{
 	height: 200px;
 	position: relative;
 }
-
 .category a {
 	display: inline-block;
 	height: 100%;
 	width: 100%;
-	padding: 25px;
 }
-
 .basics {
   background: linear-gradient(to top right, red, yellow);
 }
-
 .tutorials {
 	background: linear-gradient(to top right,#00B7FF, #FFFFC7);
 }
-
 .dictionary {
 	background: linear-gradient(to top right,#B066FE, #63E2FF);
 }
-
 .contributors {
 	background: linear-gradient(to top right,#4F00BC, #29ABE2);
 }
-
 .category img {
 	height: 100px;
 	float: right;
@@ -133,17 +103,14 @@ code{
 	bottom: 15px;
 	right: 15px;
 }
-
 .category h3 {
 	position: relative;
 	color: white;
 	padding: 15px;
-	margin: 0px;
 }
-
 .category p {
 	font-weight: bold;
-	font-size: 13px !important;
+	font-size: 14px;
 	text-transform:uppercase;
 	color: white;
 	opacity: 0.7;
@@ -153,60 +120,11 @@ code{
 	margin-left: 15px;
 	display: inline-block;
 }
-
-.singlesection{
-	border: 1px solid grey;
-	border-radius: 18px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background: linear-gradient(to bottom,#fff, #eee);
-}
-.introtext {
-	display: block;
-	margin-left: 50px;
-	margin-right: 50px;
-	font-size: 115%;
-}
-
-.six.wide {
-  float: left;
-  width: 50%;
-}
-
-.four.wide {
-	float: left;
-	width: 33%;
-}
-
-.three.wide {
-	float: left;
-	width: 25%
-}
-
-.column p {
-	margin-bottom: 12px;
-	font-size: 17px;
-}
-
 .column a {
 	padding:0;
 }
-
 .column h3 {
 	margin: 0;
-
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.columnfirst {
-	display: inline-block;
-}
-.columnsecond{
-	display: block;
 }
 .center {
 	display: block;
@@ -214,7 +132,6 @@ code{
 	margin-right: auto;
 	text-align: center;
 }
-
 .content {
 	width: 55% !important;
 	margin: auto;
@@ -223,32 +140,21 @@ code{
 	padding-left: 22.5%;
 	  min-height: 100%;
 }
-
-.pagetitle {
+#page-title {
 	margin: auto;
 	font-size: 72px;
 	font-weight:bold;
+	text-align: center;
 }
-
-.pagetitle img {
+#page-title img {
 	vertical-align:middle;
 	height:128px; padding-right: 8px
 }
-
-.pagesubtitle {
+#page-subtitle {
 	font-size: 32px;
 	font-weight:lighter;
 	text-align: center;
 }
-
-.italic {
-	font-style: italic;
-}
-
-.bold {
-	font-weight: bold;
-}
-
 .collapsible {
 color: #553E4E;
 cursor: pointer;
@@ -261,7 +167,6 @@ font-size: 15px;
 border-radius: 12px;
 background: linear-gradient(to right, #eee, #fff);
 }
-
 .collapsible-content {
 	padding: 0 18px;
 	max-height: 0;
@@ -269,13 +174,40 @@ background: linear-gradient(to right, #eee, #fff);
 	transition: max-height 0.2s ease-out;
 }
 
+/* Semantic classes */
+
+.six.wide {
+  float: left;
+  width: 50%;
+}
+.four.wide {
+	float: left;
+	width: 33%;
+}
+.three.wide {
+	float: left;
+	width: 25%
+}
 .highlight-note{
 	background:#FFFEBF;
 }
-
 .highlight-warn {
 	background: #FFBDBF;
 }
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
+}
+.light {
+	font-weight: 300;
+}
+.full-width {
+	width: 100%;
+}
+
+/* Footer rules */
 
 footer {
 	display: inline-block;
@@ -284,7 +216,6 @@ footer {
 	padding-left: 20%;
 	padding-right: 20%;
 }
-
 footer a {
 	color: rgb(0, 112, 201);
 }
