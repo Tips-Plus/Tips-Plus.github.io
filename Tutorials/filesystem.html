@@ -6,9 +6,10 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
-<link rel="icon" type="image/png" href="../../images/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="../../images/favicon-16x16.png" sizes="16x16" />
-<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
 <script type="text/javascript">
 function getDocHeight(doc) {
     doc = doc || document;
@@ -40,17 +41,17 @@ document.getElementById('ifrm').onload = function() { // Adjust the Id according
   <div id="nav-placeholder"></div>
   <script>
   $(function(){
-    $("#nav-placeholder").load("nav.html");
+    $("#nav-placeholder").load("../nav.html");
   });
   </script>
-
-<br style="line-height: 300%">
+<div class="content">
 <h1>iOS FileSystem</h1>
 <p class="center">The general FS layout of modern iOS<br>
 	This may take a moment to load, please wait.</p>
-<iframe class="center" src="./FileSys.html" height="500px" width="80%" frameborder="3" id="ifrm"></iframe>
+<iframe class="center" src="./fshelper.html" height="500px" width="80%" frameborder="3" id="ifrm"></iframe>
 <p class="center">This is based on the iPhone 7's iOS 11.1.2 FileSystem.</p>
 <p><b>Note:</b> The directories VAR, TMP, and ETC are seen as symbolic links in the window above. VAR and ETC can be found in /PRIVATE, and TMP can be found inside /PRIVATE/VAR.</p>
 <p class="center">Find an error? <a href="mailto:micahplacido@gmail.com">Let's fix it together.</a></p>
-</body>
+</div>
+	</body>
 </html>
