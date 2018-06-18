@@ -25,25 +25,25 @@
 <div class="collapsible-content">
 <h3>Requirements:</h3>
 <p class="center italic">Compared to 32-bit devices, 64 bit devices are very heavy on security. The most major way is within the SEP. This handles some security processes on the device, most notably touchID and FaceID. It runs its own OS, which is also signed by Apple. sepOS must be compatible with iOS for a successful restore process.</p>
-<div class="makegood">
+<div>
    <ul>
       <li> SHSH Blobs</li>
       <li> Signed SEP</li>
-      <li> Device Capable of setting nonce <small class="note">NOTE: (This can be done with NonceSet or V0rtexNonce, but this tutorial will demonstrate from the command line)</small></li>
+      <li> Device Capable of setting nonce <small class="highlight-note">NOTE: (This can be done with NonceSet or V0rtexNonce, but this tutorial will demonstrate from the command line)</small></li>
       <li> IPSW for target iOS version</li>
       <li> Machine running Mac OS or Windows</li>
    </ul>
 </div>
 <h3>Let's get started:</h3>
-<div class="makegood">
+<div>
    <ol>
       <li>Download the latest FutureRestore from <a href="https://github.com/encounter/futurerestore/releases">Encounter's GitHub</a></li>
-      <li>Put the <i>.IPSW</i> and <i>.SHSH</i> in the same folder as the FutureRestore executable. <small class="note">NOTE: For simplicity, name each file according to the iOS version you wish to go to (1131.ipsw &amp; 1131.shsh2, if you were restoring to iOS 11.3.1)</small></li>
+      <li>Put the <i>.IPSW</i> and <i>.SHSH</i> in the same folder as the FutureRestore executable. <small class="highlight-note">NOTE: For simplicity, name each file according to the iOS version you wish to go to (1131.ipsw &amp; 1131.shsh2, if you were restoring to iOS 11.3.1)</small></li>
 	   <img src="../images/tutorials/frestore.PNG">
       <li>Set your nonce. Do to this, open a command prompt or SSH session on your device, and enter the following command, substituting the text in brackets with its appropriate replacements: <code>nvram com.apple.System.boot-nonce=[generator]</code></li>
 	  <li>With your device plugged into your computer, put your device into recovery mode, also from the command line: <code>nvram auto-boot=false</code> and <code>reboot</code></li>
 	   <li>On your computer, open Command Prompt (Windows) or Terminal (macOS) to the location in which FutureRestore is located</li>
-	   <li>inside your command shell, enter the following, substituting the text in brackets with their appropriate replacements:<br><b>On macOS:</b> <code>./futurerestore -t [SHSH2 blob File] --latest-sep --latest-baseband [IPSW File]</code><br><b>On Windows:</b> <code>futurerestore -t [SHSH2 blob File] --latest-sep --latest-baseband [IPSW File]</code><br><small class="note">NOTE: The <code>-t</code> specifies the apticket or "blob" filepath. The <code>--latest-sep</code> and  <code>--latest-baseband</code> specifies that FutureRestore should use the latest sepOS and baseband provided by Apple. <span style="background: #FFBDBF"> If you are restoring a device without cellular capabilities, use <code>--no-baseband</code> instead of <code>--latest-baseband</code>.</span></small></li>
+	   <li>inside your command shell, enter the following, substituting the text in brackets with their appropriate replacements:<br><b>On macOS:</b> <code>./futurerestore -t [SHSH2 blob File] --latest-sep --latest-baseband [IPSW File]</code><br><b>On Windows:</b> <code>futurerestore -t [SHSH2 blob File] --latest-sep --latest-baseband [IPSW File]</code><br><small class="highlight-note">NOTE: The <code>-t</code> specifies the apticket or "blob" filepath. The <code>--latest-sep</code> and  <code>--latest-baseband</code> specifies that FutureRestore should use the latest sepOS and baseband provided by Apple. <span class="highlight-warn"> If you are restoring a device without cellular capabilities, use <code>--no-baseband</code> instead of <code>--latest-baseband</code>.</span></small></li>
 	   <li>Allow FutureRestore to run uninterrupted. You will see a lot of verbose text and progress bars appear. The process will be completed when you see <code>DONE done: restoring suceeded.</code> and FutureRestore quits.</li>
 	   <li>At this point your phone should restart, and begin the setup process as if you had performed a regular restore.</li>
    </ol>
@@ -51,7 +51,7 @@
 	</div>
 </div>
 </div>
-	  
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;

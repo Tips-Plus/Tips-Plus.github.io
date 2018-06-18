@@ -87,6 +87,10 @@ a {
 ol{
 	list-style-type: decimal;
 }
+
+li {
+	font-size: 130%;
+}
 code{
 	background: lightgrey;
 }
@@ -170,12 +174,6 @@ code{
 	font-size: 115%;
 }
 
-.makegood{
-	color: #553E4E;
-	font-size: 120%;
-	line-height: 200%;
-}
-
 .six.wide {
   float: left;
   width: 50%;
@@ -204,9 +202,7 @@ code{
 	margin: 0;
 
 }
-.note{
-	background:#FFFEBF;
-}
+
 .row:after {
     content: "";
     display: table;
@@ -277,6 +273,14 @@ background: linear-gradient(to right, #eee, #fff);
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
+}
+
+.highlight-note{
+	background:#FFFEBF;
+}
+
+.highlight-warn {
+	background: #FFBDBF;
 }
 
 footer {
