@@ -89,6 +89,9 @@ a {
 ol{
 	list-style-type: decimal;
 }
+code{
+	background: lightgrey;
+}
 /*Standard Body CSS Ends*/
 
 /*special Body Info Starts*/
@@ -203,7 +206,9 @@ ol{
 	margin: 0;
 
 }
-
+.note{
+	background:#FFFEBF;
+}
 .row:after {
     content: "";
     display: table;
