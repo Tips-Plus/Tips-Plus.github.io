@@ -56,7 +56,6 @@ body {
 -moz-osx-font-smoothing: grayscale;
 }
 h1 {
-	padding-top: 30px;
 	color: #553E4E;
 	font-size: 300%;
 }
@@ -67,7 +66,6 @@ h2{
 	display: block;
 }
 h3{
-	margin: 15px;
 	color: #333;
 	font-size: 130%;
 }
