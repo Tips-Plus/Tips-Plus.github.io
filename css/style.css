@@ -13,6 +13,7 @@ nav ul {
 }
 nav li {
 	float: left;
+	line-height: 100%
 }
 nav li a {
 	display: block;
@@ -21,12 +22,15 @@ nav li a {
 	padding: 9px 16px;
 	text-decoration: none;
 	line-height: 30px;
+
 }
 .paypal {
 	padding-top: 10px; float:right; padding-right: 10px;
 }
+
 nav li a:hover {
 	text-decoration: underline;
+
 }
 .statushome {
 	line-height: 30px;
@@ -37,6 +41,7 @@ nav li a:hover {
 	height:30px;
 	padding-right: 8px
 }
+
 /*Navigation Bar CSS Ends*/
 
 /*Standard Body CSS Starts*/
@@ -71,7 +76,9 @@ h3{
 }
 p {
 	color: #333;
+
 	font-size: 130%;
+
 }
 a {
 	text-decoration: none;
@@ -83,6 +90,7 @@ ol{
 /*Standard Body CSS Ends*/
 
 /*special Body Info Starts*/
+
 .category {
 	border-radius: 15px;
 	margin-bottom: 15px;
@@ -113,7 +121,7 @@ ol{
 }
 
 .contributors {
-	background: linear-gradient(to top right,#4F00BC, #29ABE2)
+	background: linear-gradient(to top right,#4F00BC, #29ABE2);
 }
 
 .category img {
@@ -145,16 +153,20 @@ ol{
 	display: inline-block;
 }
 
-.category:hover h3 {
-	text-decoration: underline;
+.singlesection{
+	border: 1px solid grey;
+	border-radius: 18px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: linear-gradient(to bottom,#fff, #eee);
 }
-
 .introtext {
 	display: block;
 	margin-left: 50px;
 	margin-right: 50px;
 	font-size: 115%;
 }
+
 .makegood{
 	color: #553E4E;
 	font-size: 120%;
@@ -187,6 +199,7 @@ ol{
 
 .column h3 {
 	margin: 0;
+
 }
 
 .row:after {

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>The Basics</title>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
-    <link rel="shortcut icon" href="../images/logo.ico">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-  </head>
+<head>
+	<meta charset="utf-8">
+	<title>Tips+ - Troubleshooting</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
+	<link href="../images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="../images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
   <body>
     <div id="nav-placeholder"></div>
     <script>
@@ -16,8 +17,56 @@
       });
     </script>
     <div class="content">
+      <h1>Troubleshooting</h1>
+      <h3>Author: Artillect</h3>
+      <p>Unfortunately, your device has stopped working! You don't want to restore your device to a newer version because you've waited months to get a working jailbreak. Don't worry! By following this guide, we'll give you the knowledge necessary to fix (or find out how to fix) your iOS device.</p>
+      <hr>
+      <h2>Requirements and useful tools</h2>
+      <p>Generally you'll want to have these tools installed on your device before something goes wrong, but some of these come preinstalled on your device and only require installation on your computer.</p>
 
+      <h3>SSH (Secure Shell)</h3>
+      <p>Possibly the most popular tool out of all of these is SSH. It allows you to connect to your device over your local network (or USB if you have it configured), and can run commands on your device to fix some of the issues you might be having, including but not limited to:</p>
+      <ul>
+        <li>Device unresponsiveness</li>
+        <li>Black screens</li>
+        <li>Respring loops</li>
+      </ul>
+      <p>SSH comes preinstalled on most jailbreaks, including Electra. SSH is also preinstalled on many operating systems, but might need to be enabled through your computer's settings before you can use it in your terminal of choice. Alternatively, you can install a SSH client like PuTTY using <a href="https://www.ssh.com/ssh/putty/windows/">this guide</a> for Windows (tutorials for other operating systems are linked in that guide).</p>
+      <p>Once you've installed SSH, it's important that you know how to use it. <a href="http://www.idownloadblog.com/2017/02/03/how-to-ssh-from-mac-change-root-password/">This guide</a> shows you how to SSH into your device, and how to change your device's root password (which is something that everyone who is jailbroken should do to improve device security). Once you've changed your device's root password, remember to keep track of it someplace safe so you know what it is in the future. If you choose to not change your device's root password, remember that there are risks with doing this and that anyone on your network can access the files on your device if you don't change the password from the default.</p>
+
+      <h3>CocoaTop</h3>
+      <p>CocoaTop is a tool that allows you to view the CPU usage, RAM usage, and various other data related to the apps, daemons, and other services running on your device. It is basically Windows's "task manager" but for your iPhone, iPad, or iPod Touch. CocoaTop is named after the 'top' command found on many Unix distributions.</p>
+      <p>If your device is running slow, you can use CocoaTop to identify the process that is causing performance issues. <i>I don't recommend this</i>, but you can use that information to force kill the process and free up system resources. This can cause severe system instability issues and may cause more issues than your device was having before.</p>
+
+      <h3>CrashReporter</h3>
+      <p>Crashreporter is a useful tweak that will show you what caused your device to crash. Sometimes it doesn't tell you exactly what caused the crash, but generally you get a good idea of what is causing the issue. When it doesn't tell you what caused the issue, you can use <a href="https://www.ziph0n.com/blog/article.php?id=4">this guide</a> to give yourself a better idea of what's going wrong.</p>
+
+      <h3>Filza</h3>
+      <p>Filza is another useful tool you can install on your device that allows you to browse the files present on your device. Filza is found on Cydia, but it can also be sideloaded using <a href="http://www.cydiaimpactor.com/">Cydia Impactor</a> (which you should already be familiar with because you used it to install Electra). iCleaner is another tweak that is found on <a href="http://www.cydiaimpactor.com/">this repo</a> that you can use to clean up unused files on your device.</p>
+
+      <p>It's also important to know how your device works. Familiarize yourself with settings available in stock iOS, because some of your problems or requests for tweaks might already be available by default.</p>
+      <hr>
+
+      <h2>0. Identifying the problem</h2>
+      This section of the guide (and everything below) is a work in progress.
+
+      <hr>
+      <h2>1. Fixing using easy methods</h2>
+
+      <hr>
+      <h2>2. Searching for a solution</h2>
+
+      <hr>
+      <h2>3. Ask for a solution</h2>
+
+      <hr>
+      <h2>4. The nuclear option</h2>
     </div>
-  
+    <div id="footer-placeholder"></div>
+  	<script>
+  	$(function(){
+  		$("#footer-placeholder").load("../footer.html");
+  	});
+  	</script>
   </body>
 </html>
