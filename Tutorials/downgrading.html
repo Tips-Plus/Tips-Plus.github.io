@@ -21,7 +21,8 @@
 <h1><a name="downgrade">Downgrading your iDevice</a></h1>
 <h3>Downgrading is a key part of Jailbreaking.</h3>
 <p>It allows you to go to one iOS version to another, regardless of wether or not Apple is signing that version. This can be used, for example, to go from iOS 10.2 to iOS 11.1.2, when 11.1.2 is no longer signed.</p>
-<h3>64-bit devices</h3>
+<button class="collapsible">64-bit devices</button>
+<div class="collapsible-content">
 <h3>Requirements:</h3>
 <p class="center italic">Compared to 32-bit devices, 64 bit devices are very heavy on security. The most major way is within the SEP. This handles some security processes on the device, most notably touchID and FaceID. It runs its own OS, which is also signed by Apple. sepOS must be compatible with iOS for a successful restore process.</p>
 <div class="makegood">
@@ -46,7 +47,26 @@
 	   <li>Allow FutureRestore to run uninterrupted. You will see a lot of verbose text and progress bars appear. The process will be completed when you see <code>DONE done: restoring suceeded.</code> and FutureRestore quits.</li>
 	   <li>At this point your phone should restart, and begin the setup process as if you had performed a regular restore.</li>
    </ol>
+	<p>Run into any issues? Check out FutureRestore's <a href="https://github.com/encounter/futurerestore/issues">Issues Page</a> or search <a href="https://www.reddit.com/r/jailbreak/">the subreddit</a> for help!</p>
+	</div>
 </div>
 </div>
+	  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 </body>
 </html>
