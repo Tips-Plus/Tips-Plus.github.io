@@ -1,14 +1,19 @@
 
 /*navigation bar CSS Starts*/
+#nav-placeholder {
+	height: 48px;
+	position: sticky;
+	top: 0;
+}
 nav {
+	height: 48px;
 	border-bottom: 1px solid #DDD;
+	background-color: #fff;
 }
 nav ul {
 	list-style-type: none;
 	margin: auto;
 	padding: 0;
-	overflow: hidden;
-	top: 0;
 	width: 80%;
 }
 nav li {
@@ -22,12 +27,7 @@ nav li a {
 	padding: 9px 16px;
 	text-decoration: none;
 	line-height: 30px;
-
 }
-.paypal {
-	padding-top: 10px; float:right; padding-right: 10px;
-}
-
 nav li a:hover {
 	background: linear-gradient(#eee,#fff)
 
@@ -48,13 +48,8 @@ nav li a:hover {
 @font-face{
 	font-family: 'Tajawal', sans-serif;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-}
 body {
-	height: 100%;
-	margin: 0;
+	margin: 0px;
 	font-family: 'Tajawal', sans-serif;
 	text-rendering: optimizeLegibility;
 -webkit-font-smoothing: antialiased;
