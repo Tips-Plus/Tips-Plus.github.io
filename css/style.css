@@ -126,6 +126,9 @@ code{
 .column h3 {
 	margin: 0;
 }
+.column p {
+	margin: 0;
+}
 .center {
 	display: block;
 	margin-left: auto;
@@ -173,7 +176,10 @@ background: linear-gradient(to right, #eee, #fff);
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
-
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 /* Semantic classes */
 
 .six.wide {
@@ -205,6 +211,12 @@ background: linear-gradient(to right, #eee, #fff);
 }
 .full-width {
 	width: 100%;
+}
+.row div{
+	display: inline-block;
+}
+.row div ::after{
+	content: "\00A0";
 }
 
 /* Footer rules */
