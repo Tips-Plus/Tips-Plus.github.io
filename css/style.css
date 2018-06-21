@@ -188,11 +188,11 @@ background: linear-gradient(to right, #eee, #fff);
 }
 .four.wide {
 	float: left;
-	width: 33%;
+	width: 25%;
 }
 .three.wide {
 	float: left;
-	width: 25%
+	width: 33.33%
 }
 .highlight-note{
 	background:#FFFEBF;
@@ -212,13 +212,11 @@ background: linear-gradient(to right, #eee, #fff);
 .full-width {
 	width: 100%;
 }
-.row div{
+.row{
 	display: inline-block;
+	margin-top: 1%;
+	margin-bottom: 2%;
 }
-.row div ::after{
-	content: "\00A0";
-}
-
 /* Footer rules */
 
 footer {
