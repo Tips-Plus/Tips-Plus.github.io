@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Tips+ IPSWs</title>
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="../js/nav-footer.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
-	<link href="../images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-	<link href="../images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-	<link href="../css/style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Tips+ IPSWs</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../js/nav-footer.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Tajawal:300,400,700" rel="stylesheet">
+<link href="../images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="../images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="nav-placeholder"></div>
@@ -18,15 +18,69 @@
 	<h1>Decrypting IPSWs</h1>
 	<h3>Author: MPG13</h3>
 	<h2 id="page-subtitle">IPSW decryption can be used to restore system files</h2>
-	<p>An IPSW file is the operating system image for iOS devices. You use these to restore within iTunes or through third party tools like FutureRestore. Think of them like an iOS equivalent to a Windows ISO.<br>Within IPSW files are the system file structure. This is incredibly helpful in the case of accidentally deleting a system file or folder.</p>
+	<p>An IPSW file is the operating system image for iOS devices. You use these to restore within iTunes or through third party tools like FutureRestore. Think of them like an iOS equivalent to a Windows ISO.<br>
+		Within IPSW files are the system file structure. This is incredibly helpful in the case of accidentally deleting a system file or folder.</p>
 	<p class="highlight-warn">If you have deleted a system file or folder, do not reboot or respring! This could cost you your jailbreak! If deleted via Filza or iFile, first attempt to locate it within the trash and restore it!</p>
 	<h3>Requirements</h3>
 	<ul>
 		<li>A computer running MacOS</li>
 	</ul>
-	<ol>
-		<li></li>
-	</ol>
+	<h3>Instructions</h3>
+	<button class="collapsible">Finding your Device Model</button>
+	<div class="collapsible-content">
+		<p><b>Method One: iPhone Casing</b></p>
+		<ol>
+			<li>Remove your case, if you have one, from your phone</li>
+			<li>On the back casing of your phone, look for the device information text</li>
+			<li>In the bottom left, find the string of text following "Model" or "Model No." This should look along the lines of <code>A1549</code></li>
+		</ol>
+		<p><b>Method Two: System Info</b></p>
+		<ol>
+			<li>Download the tweak "System Info" by author "ARX8x" from the BigBoss repo in Cydia</li>
+			<li>Once installed, launch Setting, and navigate to <code>Settings&gt;General&gt;About</code> and find the Model cell.  This should look along the lines of <code>A1549</code></li>
+			<li>Tap on the cell once to get your device's Model number, and hold on the cell to copy your Model</li>
+		</ol>
+		<p>Other methods are available but will not be covered here, to keep things brief.</p>
+	</div>
+	<button class="collapsible">Getting your IPSW</button>
+	<div class="collapsible-content">
+		<ol>
+			<li>Go to <a href="https://ipsw.me/device-finder">IPSW.me's Device Finder</a></li>
+			<li>Press the button corresponding to your device (iPhone, iPod Touch, iPad)</li>
+			<li>In the text box that shows up toward the bottom of the device, enter your Model Number and press Enter</li>
+			<img width="500px" src="../images/tutorials/decrypt_IPSWModelNo.png">
+			<li>In the new panel that shows up, select "Browse all iOS releases"</li>
+			<li>From this page, find the IPSW for the desired iOS version, and click on the link in the download column</li>
+			<img width="500px" src="../images/tutorials/decrypt_IPSWLink.png">
+			<li>Save the file to a folder you'll remember</li>
+		</ol>
+	</div>
+	<button class="collapsible">Decrypting your IPSW</button>
+	<div class="collapsible-content">
+		<ol>
+			<li>Create a duplicate of the IPSW file you just downloaded (<code>CMD+D</code>)</li>
+			<li>Change the copied file's extension from <code>.ipsw</code> to <code>.zip</code></li>
+			<img width="200px" src="../images/tutorials/decrypt_IPSWtoZIP.png">
+			<li>Open the ZIP file to extract its contents</li>
+			
+		</ol>
+	</div>
 </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+			content.style.maxHeight = null;
+		} else {
+			content.style.maxHeight = content.scrollHeight + "px";
+		}
+	});
+}
+</script>
 </body>
 </html>
