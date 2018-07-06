@@ -48,19 +48,47 @@
       <hr>
 
       <h2>0. Identifying the problem</h2>
-      This section of the guide (and everything below) is a work in progress.
-
+			<p>Identify the problem. I know this sounds like a stupid step but it'll be vital later on when you're trying to search for a solution or tell others what's going wrong with your device. The better you can explain your issue, the easier it will be for others to help you solve your problem.</p>
+			<p>There's a few common categories of issues that will have different methods of solving, some of those include:</p>
+			<ul>
+				<li>Crashing to safemode</li>
+				<li>Issues with Cydia</li>
+				<li>Issues with system themes</li>
+				<li>Respring loop</li>
+				<li>Bootlooping (only present on older fully-untethered jailbreaks AFAIK) (possible on any jailbreak if you screw up badly enough)</li>
+				<li>High CPU/battery usage</li>
+				<li>Nonfunctional tweaks</li
+			</ul>
       <hr>
       <h2>1. Fixing using easy methods</h2>
+			<p>Now to actually solving your problem. One of the first things you should do when you encounter an issue (except for a respring loop) is restarting your device. You can do this by shutting down your device and then turning it back on. If the problem doesn't come back immediately, you might have solved it, but you might not be done fixing it.</p>
+
+			<p>If the problem started after you installed a new tweak or app, uninstall that tweak or app, and restart your device. If the problem was caused by that tweak or app, your problem will go away 99.9% of the time. In the 0.1% of times that your problem doesn't go away, you can probably solve it by deleting the old preference files (.plist) for that tweak in iCleaner.</p>
+
+			<p>If you're having trouble installing tweaks in Cydia, try reloading your sources by going to the sources tab in Cydia and pressing the reload button.</p>
+
+			<p>If all else fails, try changing settings related to the issue you're getting. Don't fiddle with stuff in Filza or in your terminal unless you know what you're doing, but make changes to settings that you feel might solve the problem. If you never try it out, you'll never figure out your problem! Part of the fun of jailbreaking is figuring out stuff as you go (in my opinion).</p>
 
       <hr>
       <h2>2. Searching for a solution</h2>
 
+			<p>If you can't solve your problem on your own, let's see if someone else on the internet has run into what you're dealing with. Whenever I have a problem, I check out the <a href="https://www.reddit.com/r/jailbreak/wiki/faq">/r/jailbreak FAQ</a>, which has a lot of solutions to common problems. Problems with newer tweaks or jailbreaks might not be found on there, so you might have better luck using Google to find a solution.</p>
+
+			<p>Start by searching for the error message you are getting or a simple description of what is happening. Add your iOS version and reddit too (I find it helps a lot). For example, the search "reddit jailbreak snapchat ban ios 11" will give you multiple useful reddit posts, forum posts, and articles from reputable sites about jailbreaking. Sites like iDownloadblog are absolutely excellent for guides and solutions to common issues. If your first search doesn't work, try searching again! Use different words in your search, try googling "snapchat banned snapchat++" or whatever tweak you believe may be causing an issue. Using different combinations of search terms is the best way to get different results that may be more useful than the last.</p>
+
+			<p>Reddit's built-in search gets a lot of hate, but it can be very useful. Searching for one word in /r/jailbreak, like the name of the tweak, app, or daemon you're having issues with can have great results. Searching for nsurlsessiond shows you a large number of posts discussing issues with it, most of which have solutions in the comment sections.</p>
+
       <hr>
       <h2>3. Ask for a solution</h2>
+			<p>If you can't find it through all of this searching, head over to the <a href="http://rjailbreak.com/discord">/r/Jailbreak Discord</a>. If you're not familiar with Discord, it's essentially a chat program where people can run chat servers with individual channels (which begin with #). You can use @ to mention other users (similar to using /u/ on reddit, or @ on Twitter). Feel free to ask your question in either the channel #genius-bar or #genius-bar-2. They'll either help you with your problem or direct you to a channel better suited for solving your problem. Make sure to fully describe your issue, tell them your device, your iOS version, and what you believe is causing the issue. I find that asking people on the Discord server for solutions to my problems is the fastest way of getting a solution, but you might have better results by making a post on the subreddit.</p>
+
+			<p>Start by writing a descriptive title that concisely describes the issue you're having. Use similar words that you used in your Google searches but make it into a full sentence that people can read. In the text of the post, describe your issue just like you did on the Discord server. The more information you tell people, the more likely you are to get a useful solution. <a href="https://www.reddit.com/r/jailbreak/wiki/greatposts">This guide</a> provides even more information about how you can make a post that is really helpful to the people trying to solve your problem. After you make your post and people respond, try out what they tell you to do, or answer any questions they have about your issue. If you don't understand something they tell you, feel free to ask a clarifying question. Also, make sure to press the reply button under the people that respond to your post. If you don't, and you just respond to your post, they won't know that you responded and they won't be able to help you as quickly.</p>
+
+			<p>At this point, you will probably solve your issue and you'll be done. If not, you can <a href="https://help.github.com/articles/creating-an-issue/">submit an issue report</a> on the tweak's GitHub page. The developer of that tweak might respond to your issue and help you solve it.</p>
 
       <hr>
       <h2>4. The nuclear option</h2>
+			<p>If nothing at all works to solve your problem, you can remove your jailbreak and reinstall it using <a href="https://www.reddit.com/r/jailbreak/wiki/faq#wiki_removing_jailbreak">this guide</a>. On iOS 11 Electra, you can use Semirestore Lite 11 to revert your device to its state immediately before installing Electra. This guide provides an excellent tutorial on how to do that. You can also use delectra to remove Electra from your device. From this state, you can try installing Electra again, or fully restoring your device and updating to a new version of iOS. Avoid updating as much as possible because you might not be able to jailbreak your device for several months until a new jailbreak is released.</p>
     </div>
     <div id="footer-placeholder"></div>
   	<script>
